@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="loop.c" />
     <ClCompile Include="printfscanf.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

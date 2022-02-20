@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main()
+int main_printfscanf()
 {
 	/*int age = 12;//변수는 변하는 수 상수는 변하지 않는 수 int는 자료형, float, char등등
 	printf("%d\n", age);//%d는 정수형을 출력하기 위함
