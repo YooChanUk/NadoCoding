@@ -1,2 +1,4 @@
-﻿  loop.c
+﻿  condition.c
+C:\Users\유찬욱\source\repos\ImCoding\nado\condition.c(123,7): warning C4013: 'srand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\유찬욱\source\repos\ImCoding\nado\condition.c(124,16): warning C4013: 'rand'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
   nado.vcxproj -> C:\Users\유찬욱\source\repos\ImCoding\Debug\nado.exe

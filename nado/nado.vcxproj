@@ -19,8 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="condition.c" />
     <ClCompile Include="loop.c" />
     <ClCompile Include="printfscanf.c" />
+    <ClCompile Include="random.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
