@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="array.c" />
+    <ClCompile Include="array_procject.c" />
     <ClCompile Include="condition.c" />
     <ClCompile Include="function.c" />
     <ClCompile Include="function_project.c" />

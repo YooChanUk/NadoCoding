@@ -8,7 +8,7 @@ void showQuestion(int level,int num1,int num2);
 void success();
 void fail();
 
-int main(void)
+int main_function_project(void)
 {
 	//문이 5개가 있고 각 방문마다 점점 어려운 수식퀴즈가 출제됩니다.(랜덤)  2:37:42
 	//맞히면 통과 틀리면 실패
