@@ -3,7 +3,7 @@
 
 //아빠는 대머리 게임 3:23:17
 
-int main()
+int main_array_project()
 {
 	srand(time(NULL));
 	printf("\n\n ==== 아빠는 대머리 게임 ==== \n\n");
