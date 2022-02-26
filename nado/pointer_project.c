@@ -14,6 +14,7 @@ int * cursor;
 void initData();
 void printfFishes();
 void decreaseWater(long elapsedTime);
+int checkFishAlive();
 
 int main()
 {
@@ -44,9 +45,8 @@ int main()
 		//총 경과 시간
 		totalElapsedTime = (clock() - startTime) / CLOCKS_PER_SEC;
 		printf("총 경과 시간 : %ld 초\n",totalElapsedTime);
-
 		//직전 물 준 시간(마지막으로 물 준 시간) 이후로 흐른 시간
-		prevElapseTime -= totalElapsedTime;
+		prevElapseTime = totalElapsedTime - prevElapseTime;
 		printf("최근 경과 시간 : %ld 초\n",prevElapseTime);
 
 		//어항의 물을 감소 (증발)
@@ -80,6 +80,21 @@ int main()
 		}
 
 		// 모든 물고기가 죽었는지 확인
+		if (checkFishAlive() == 0)
+		{
+			//물고기 모두 죽음
+			printf("게임 오버\n");
+			exit(0);
+		}
+		else
+		{
+			//최소 한마리 이상의 물고기는 살아있음
+			printf("물고기가 살아있습니다\n");
+		}
+
+		prevElapseTime = totalElapsedTime;
+
+		// 10초 - > 15초 (5ch : prevElapsedTime -> 15초 ) -> 25초 (10초...)
 	}
 
 
@@ -114,6 +129,21 @@ void decreaseWater(long elapsedTime)
 		if (arrayFish[i] < 0)
 		{
 			arrayFish[i] = 0;
+		}
+	}
+}
+
+int checkFishAlive()
+{
+	for (int i = 0; i < 6; i++)
+	{
+		if (arrayFish[i] > 0)
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
 		}
 	}
 }
